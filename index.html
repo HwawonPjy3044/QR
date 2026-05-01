@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR 코드 생성기</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QR Generator</h1>
+            <p>링크를 입력하여 고품질 QR 코드를 생성하세요.</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="urlInput" placeholder="https://example.com" autocomplete="off">
+            <button id="generateBtn">확인</button>
+        </div>
+
+        <div class="qr-container">
+            <div id="qrcode"></div>
+            <p id="qr-hint" class="hint">QR 코드가 여기에 표시됩니다.</p>
+        </div>
+    </div>
+
+    <!-- qrcode.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
